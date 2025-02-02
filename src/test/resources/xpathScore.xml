@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd">
+<suite name="XpathLocators-Suite">
+    <listeners>
+        <listener class-name="com.harshitbhardwaj.listener.AnnotationTransformer"/>
+        <listener class-name="com.harshitbhardwaj.listener.AllureTestLifeCycleListener"/>
+    </listeners>
+    <test name="XpathLocatorsScoreTest">
+        <classes>
+            <class name="com.harshitbhardwaj.tests.XpathLocatorsTest"/>
+        </classes>
+    </test>
+</suite>
