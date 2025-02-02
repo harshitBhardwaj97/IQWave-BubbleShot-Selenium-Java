@@ -19,10 +19,4 @@ public interface Configuration extends Config {
     @Key("headless")
     @DefaultValue("false")
     Boolean headless();
-
-    @Key("test")
-    int test();
-
-    @Key("testd")
-    double testd();
 }
