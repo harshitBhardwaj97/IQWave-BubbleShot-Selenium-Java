@@ -18,5 +18,4 @@ public final class Constants {
             throw new AssertionError("Can't instantiate Constants.Common class");
         }
     }
-
 }

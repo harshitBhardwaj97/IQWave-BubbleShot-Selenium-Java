@@ -56,7 +56,9 @@ public class CSSLocatorsTest extends BaseTest {
                 isTimeUp = WebDriverManager.getDriver().findElement(currentTimeLeft).getText().equals("0");
 
                 // Dynamically create the target element's XPath and click it
-                WebElement elementToHit = WebDriverManager.getDriver().findElement(By.xpath(String.format(currentTargetTemplate, WebDriverManager.getDriver().findElement(target).getText())));
+                WebElement elementToHit = WebDriverManager.getDriver()
+                        .findElement(By.xpath(String.format(currentTargetTemplate,
+                                WebDriverManager.getDriver().findElement(target).getText())));
 
                 // Click the element using JavaScriptExecutor for faster interaction
                 jsExecutor.executeScript("arguments[0].click();", elementToHit);
@@ -79,5 +81,4 @@ public class CSSLocatorsTest extends BaseTest {
         logger.info("-------------------------------------------------------------");
         logger.info("******** getScoreUsingCSSLocators test completed ********");
     }
-
 }
